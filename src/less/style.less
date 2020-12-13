@@ -3,9 +3,16 @@
 @clr-64: #646464;
 @clr-88: #888888;
 @clr-primary: #007bff;
+@clr-danger: #dc3545;
 
 html, body{
     height: 100%;
+}
+.clr-danger, a.clr-danger{
+    color:@clr-danger !important
+}
+.bg-f0{
+    background-color: @clr-f0;
 }
 .container-s{
     max-width: 1200px;
@@ -58,6 +65,7 @@ html, body{
                     border: 1px solid @clr-f0;
                     a{
                         font-weight: bold;
+                        text-decoration: none;
                     }
                 }
             }
@@ -126,7 +134,7 @@ nav.wide-menu{
                 text-decoration: none;
                 display: inline-block;
                 color: @clr-64;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 padding: .5rem 0;
                 margin-right: 1rem;
                 font-weight: bold;
@@ -196,6 +204,9 @@ nav.wide-menu{
                 & > a {
                     font-weight: bold;
                     font-size: 1.2rem;
+                    color: @clr-64;
+                }
+                a{
                     color: @clr-64;
                 }
             }

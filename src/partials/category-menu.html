@@ -1,10 +1,10 @@
 <div class="container-s">
-    <nav class="wide-menu ">
+    <nav id='navbar' class="wide-menu">
         <div class="row">
             <div class="header active col-12">
-                <a href="javascript:;"  class="float-left mr-3"><i class="fa fa-chevron-left"></i></a>
+                <a href="javascript:;" id="btnCloseNavbar"  class="float-left mr-3"><i class="fa fa-chevron-left"></i></a>
                 <img src="images/kardo.png" alt="" class="float-left active">
-                <a href="javascript:;" class="float-right"><i class="fa fa-search"></i></a>
+                <a href="javascript:;" class="btnSearchPage float-right"><i class="fa fa-search"></i></a>
             </div>
         </div>
         <div class="row">
@@ -22,21 +22,42 @@
         <div class="row">
             <div class="col-12">
                 <ul>
-                    <li class="menu-item" data-content="menu-item-kadin-content">
+                    <li class="menu-item" data-content="kadinContent">
                         <a href="javascript:;">Kadın</a>
                     </li>
-                    <li class="menu-item" id="menu-item-kadin">
+                    <li class="menu-item" data-content="erkekContent">
                         <a href="javascript:;">Erkek</a>
+                    </li>
+                    <li class="menu-item" data-content="kadinContent">
+                        <a href="javascript:;">Çocuk</a>
+                    </li>
+                    <li class="menu-item" data-content="erkekContent">
+                        <a href="javascript:;">Ev & Yaşam</a>
+                    </li>
+                    <li class="menu-item" data-content="kadinContent">
+                        <a href="javascript:;">Süpermarket</a>
+                    </li>
+                    <li class="menu-item" data-content="erkekContent">
+                        <a href="javascript:;">Kozmetik</a>
+                    </li>
+                    <li class="menu-item" data-content="kadinContent">
+                        <a href="javascript:;">Ayakkabı & Çanta</a>
+                    </li>
+                    <li class="menu-item" data-content="erkekContent">
+                        <a href="javascript:;">Saat & Aksesuar</a>
+                    </li>
+                    <li class="menu-item" data-content="kadinContent">
+                        <a href="javascript:;" class="clr-danger">Elektronik</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="menu-items-contents ">
+    <div id="navbarContents" class="menu-items-contents ">
         <div class="row">
             <div class="header col-12">
-                <a href="javascript:;"  class="float-left mr-3"><i class="fa fa-chevron-left"></i> Kadın</a>
-                <a href="javascript:;" class="float-right"><i class="fa fa-search"></i></a>
+                <a href="javascript:;" id="btnNavbarContentsBack" class="float-left mr-3"><i class="fa fa-chevron-left"></i> Kadın</a>
+                <a href="javascript:;" class="btnSearchPage float-right"><i class="fa fa-search"></i></a>
             </div>
         </div>
         <div class="row">
@@ -53,18 +74,132 @@
                 </div>
             </div>
         </div>
-        <div class="menu-item-content active" id="menu-item-female-content">
+        <div class="menu-item-content" id="kadinContent">
+            <div class="row">
+                <div class="column col-md-2 bg-f0">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Giyim</a>
+                            <ul class="">
+                                <li><a href="#">Elbise</a></li>
+                                <li><a href="#" class="clr-danger">Sweatshirt</a></li>
+                                <li><a href="#" class="clr-danger">T-shirt</a></li>
+                                <li><a href="#" class="clr-danger">Pantolon</a></li>
+                                <li><a href="#" class="clr-danger">Gömlek</a></li>
+                                <li><a href="#" class="clr-danger">Mont</a></li>
+                                <li><a href="#">Eşofman</a></li>
+                                <li><a href="#">Trençkot</a></li>
+                                <li><a href="#">Etek</a></li>
+                                <li><a href="#">Tayt</a></li>
+                                <li><a href="#">Tesettür</a></li>
+                                <li><a href="#">Büyük Beden</a></li>
+                                <li><a href="#">Plaj Giyim</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-md-2">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Ayakkabı</a>
+                            <ul>
+                                <li><a href="#">Topuklu Ayakkabı</a></li>
+                                <li><a href="#">Sneaker</a></li>
+                                <li><a href="#">Günlük Ayakkabı</a></li>
+                                <li><a href="#">Bot & Bootie</a></li>
+                                <li><a href="#">Terlik</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Aksesuar & Çanta</a>
+                            <ul>
+                                <li><a href="#">Çanta</a></li>
+                                <li><a href="#">Saat</a></li>
+                                <li><a href="#">Takı</a></li>
+                                <li><a href="#">Güneş Gözlüğü</a></li>
+                                <li><a href="#">Cüzdan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-md-2">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">İç Giyim</a>
+                            <ul>
+                                <li><a href="#">Çanta</a></li>
+                                <li><a href="#">Saat</a></li>
+                                <li><a href="#">Takı</a></li>
+                                <li><a href="#">Güneş Gözlüğü</a></li>
+                                <li><a href="#">Cüzdan</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Lüks & Designer</a>
+                            <ul>
+                                <li><a href="#">Lüks Çanta</a></li>
+                                <li><a href="#">Lüks Giyim</a></li>
+                                <li><a href="#">Lüks Ayakkabı</a></li>
+                                <li><a href="#">Tasarım Giyim</a></li>
+                                <li><a href="#">Tasarım Ayakkabı</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-md-3">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Kozmetik & Kişisel Bakım</a>
+                            <ul>
+                                <li><a href="#">Parfüm</a></li>
+                                <li><a href="#">Göz Makyajı</a></li>
+                                <li><a href="#">Cilt Bakım</a></li>
+                                <li><a href="#">Saç Bakımı</a></li>
+                                <li><a href="#">Makyaj</a></li>
+                                <li><a href="#">Ağız Bakım</a></li>
+                                <li><a href="#">Cinsel Sağlık</a></li>
+                                <li><a href="#">Hijyenik Ped</a></li>
+                                <li><a href="#">Epilasyon Ürünleri</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-md-3">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">Spor & Outdoor</a>
+                            <ul>
+                                <li><a href="#">Sweatshirt</a></li>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Spor Sütyeni</a></li>
+                                <li><a href="#">Tayt</a></li>
+                                <li><a href="#">Eşofman</a></li>
+                                <li><a href="#">Koşu Ayakkabısı</a></li>
+                                <li><a href="#">Spor Çantası</a></li>
+                                <li><a href="#">Spor Ekipmanları</a></li>
+                                <li><a href="#">Outdoor Ayakkabı</a></li>
+                                <li><a href="#">Outdoor Ekipmanları</a></li>
+                                <li><a href="#">Sporcu Besinleri</a></li>
+                                <li><a href="#">Sporcu Aksesuarları</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="menu-item-content" id="erkekContent">
             <div class="row">
                 <div class="column col-md-3">
                     <ul>
-                        <li>
+                        <li class="menu-item">
                             <a href="javasciprt:;">sublink</a>
                             <ul class="">
                                 <li><a href="#">endlink</a></li>
                                 <li><a href="#">endlink</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="javasciprt:;">sublink</a>
                             <ul>
                                 <li><a href="#">endlink</a></li>
@@ -75,7 +210,14 @@
                 </div>
                 <div class="column col-md-3">
                     <ul>
-                        <li>
+                        <li class="menu-item">
+                            <a href="javasciprt:;">sublink</a>
+                            <ul>
+                                <li><a href="#">endlink</a></li>
+                                <li><a href="#">endlink</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
                             <a href="javasciprt:;">sublink</a>
                             <ul>
                                 <li><a href="#">endlink</a></li>
@@ -86,7 +228,7 @@
                 </div>
                 <div class="column col-md-3">
                     <ul>
-                        <li>
+                        <li class="menu-item">
                             <a href="javasciprt:;">sublink</a>
                             <ul>
                                 <li><a href="#">endlink</a></li>
@@ -97,7 +239,7 @@
                 </div>
                 <div class="column col-md-3">
                     <ul>
-                        <li>
+                        <li class="menu-item">
                             <a href="javasciprt:;">sublink</a>
                             <ul>
                                 <li><a href="#">endlink</a></li>
@@ -108,70 +250,16 @@
                 </div>
             </div>
         </div>
-        <div class="menu-item-content" id="menu-item-male-content">
-            <div class="row">
-                <div class="column col-md-3">
-                    <ul>
-                        <li>
-                            <a href="javasciprt:;">sublink</a>
-                            <ul class="">
-                                <li><a href="#">endlink</a></li>
-                                <li><a href="#">endlink</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javasciprt:;">sublink</a>
-                            <ul>
-                                <li><a href="#">endlink</a></li>
-                                <li><a href="#">endlink</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column col-md-3">
-                    <ul>
-                        <li>
-                            <a href="javasciprt:;">sublink</a>
-                            <ul>
-                                <li><a href="#">endlink</a></li>
-                                <li><a href="#">endlink</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column col-md-3">
-                    <ul>
-                        <li>
-                            <a href="javasciprt:;">sublink</a>
-                            <ul>
-                                <li><a href="#">endlink</a></li>
-                                <li><a href="#">endlink</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column col-md-3">
-                    <ul>
-                        <li>
-                            <a href="javasciprt:;">sublink</a>
-                            <ul>
-                                <li><a href="#">endlink</a></li>
-                                <li><a href="#">endlink</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            
     </div>
 
-    <div class="search-page ">
+    <div id="searchPage" class="search-page ">
         <div class="header">
-            <a href="javascript:;"><i class="fa fa-chevron-left"></i></a>
+            <a href="javascript:;" id="btnCloseSearchPage"><i class="fa fa-chevron-left"></i></a>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Aradığınız tüm ürünler bir tık uzağınızda" aria-describedby="button-addon2">
+                <input id="searchInput2" type="text" class="form-control" placeholder="Aradığınız tüm ürünler bir tık uzağınızda" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                    <button id="btnSearch2" class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         </div>
