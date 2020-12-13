@@ -70,6 +70,7 @@ module.exports = function(grunt){
               {expand: true, cwd: 'node_modules/', src: ['font-awesome/**'], dest: 'dist/lib/'},
               {expand: true, cwd: 'node_modules/', src: ['jquery/**'], dest: 'dist/lib/'},
               {expand: true, cwd: 'node_modules/', src: ['bootstrap/dist/**'], dest: 'dist/lib/'},
+              {expand: true, cwd: 'src/', src: ['images/**'], dest: 'dist/'},
             ],
           },
         },
